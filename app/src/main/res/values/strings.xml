@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">For Travel</string>
+    <string name="button">예약</string>
+    <string name="button2">계획</string>
+    <string name="button3">지도</string>
+    <string name="button4">준비물</string>
+    <string name="button5">지출</string>
+    <string name="button6">티켓</string>
 </resources>
