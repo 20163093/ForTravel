@@ -6,4 +6,5 @@
     <string name="button4">준비물</string>
     <string name="button5">지출</string>
     <string name="button6">티켓</string>
+    <string name="imageButton">체크박스 추가하기</string>
 </resources>
