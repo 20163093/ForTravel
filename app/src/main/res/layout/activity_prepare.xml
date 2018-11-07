@@ -17,4 +17,14 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/imageButton"
         app:srcCompat="@drawable/clipboard" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="45dp"
+        android:text="이게뭐야" />
 </RelativeLayout>
