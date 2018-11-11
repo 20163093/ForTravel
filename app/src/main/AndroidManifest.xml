@@ -18,7 +18,8 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.kmu.fortravel"
-            android:value="AIzaSyDUk0qFMv_h_LZWG9kyyjejD9g2tt0oxC8"/>
+            android:value="AIzaSyDUk0qFMv_h_LZWG9kyyjejD9g2tt0oxC8" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,7 +41,9 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".Map"></activity>
+        <activity
+            android:name=".Map"
+            android:label="@string/title_activity_map"></activity>
     </application>
 
 </manifest>
