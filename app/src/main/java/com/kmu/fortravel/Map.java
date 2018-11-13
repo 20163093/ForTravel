@@ -3,7 +3,6 @@ package com.kmu.fortravel;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -39,15 +38,9 @@ public class Map extends FragmentActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(37.555744, 126.970431)));
-
-        CameraUpdate zoom = CameraUpdateFactory.zoomTo(15);
-        googleMap.animateCamera(zoom);
-
-        MarkerOptions marker = new MarkerOptions();
-        marker.position(new LatLng(37.555744, 126.970431))
-                .title("서울역")
-                .snippet("Seoul Station");
-        googleMap.addMarker(marker).showInfoWindow();
+        // Add a marker in Sydney and move the camera
+        LatLng sydney = new LatLng(-34, 151);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 }
