@@ -18,13 +18,24 @@
         android:contentDescription="@string/imageButton"
         app:srcCompat="@drawable/clipboard" />
 
-    <CheckedTextView
-        android:id="@+id/checkedTextView"
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:hint="목록을 추가하세요"
+        android:inputType="text" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="45dp"
-        android:text="이게뭐야" />
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="44dp"
+        android:text="CheckBox" />
+
 </RelativeLayout>
