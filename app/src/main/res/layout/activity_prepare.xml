@@ -3,42 +3,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:showIn="@layout/activity_prepare"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Prepare"
+    >
 
-    <ListView
-        android:id="@+id/listview1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:choiceMode="multipleChoice" />
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/add"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/newItem"
+            android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Add" />
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
 
         <Button
-            android:id="@+id/delete"
-            android:layout_width="wrap_content"
+            android:id="@+id/Add"
+            android:layout_width="55dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Delete" />
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/Delete"
+            android:onClick="OnClick"
+            android:text="추가" />
+
+        <Button
+            android:id="@+id/Delete"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/selectAll"
+            android:onClick="OnClick"
+            android:text="제거" />
 
         <Button
             android:id="@+id/selectAll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Select All" />
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="0dp"
+            android:text="전체 선택" />
+    </RelativeLayout>
 
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!--<Button-->
+            <!--android:text="요일목록"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/btnWeekList"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="getList"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:text="도서목록"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/btnBookList"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="getList"-->
+            <!--/>-->
     </LinearLayout>
 
 </LinearLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:showIn="@layout/activity_prepare"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ListView-->
+        <!--android:id="@+id/listview1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:choiceMode="multipleChoice" />-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/add"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Add" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/delete"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Delete" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/selectAll"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Select All" />-->
+
+    <!--</RelativeLayout>-->
+
+<!--</LinearLayout>-->
