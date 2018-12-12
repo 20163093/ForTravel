@@ -1,5 +1,6 @@
 package com.kmu.fortravel;
 
+import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,7 @@ public class Prepare extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 checkBox.setText(editText.getText());
+
             }
         });
     }
