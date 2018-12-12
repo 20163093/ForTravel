@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Prepare"
-    tools:showIn="@layout/activity_prepare">
+    tools:showIn="@layout/activity_prepare"
+    android:orientation="vertical">
 
     <ListView
         android:id="@+id/listview1"
@@ -27,18 +26,18 @@
             android:text="Add" />
 
         <Button
-            android:id="@+id/modify"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Modify" />
-
-        <Button
             android:id="@+id/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Delete" />
+
+        <Button
+            android:id="@+id/selectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select All" />
 
     </LinearLayout>
 
