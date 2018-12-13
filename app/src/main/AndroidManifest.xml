@@ -44,7 +44,8 @@
         <activity
             android:name=".Map"
             android:label="@string/title_activity_map" />
-        <activity android:name=".Ticket"></activity>
+        <activity android:name=".Ticket" />
+        <activity android:name=".Expense"></activity>
     </application>
 
 </manifest>

@@ -7,7 +7,7 @@
     tools:context=".Ticket">
 
     <ImageButton
-        android:id="@+id/ImageButton"
+        android:id="@+id/imageButton"
         android:layout_width="320dp"
         android:layout_height="293dp"
         android:layout_alignParentTop="true"

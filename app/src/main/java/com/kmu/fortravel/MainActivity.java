@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), Reservation.class);
+                Intent intent = new Intent(getApplicationContext(), Ticket.class);
                 startActivity(intent);
             }
         });
