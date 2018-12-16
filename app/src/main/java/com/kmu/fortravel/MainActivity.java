@@ -3,8 +3,11 @@ package com.kmu.fortravel;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
-import android.widget.Button;
+import android.widget.GridLayout;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = (Button) findViewById(R.id.button);
+        ImageButton button = (ImageButton) findViewById(R.id.img1);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button2 = (Button) findViewById(R.id.button2);
+        ImageButton button2 = (ImageButton) findViewById(R.id.img2);
         button2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -31,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button3 = (Button) findViewById(R.id.button3);
+        ImageButton button3 = (ImageButton) findViewById(R.id.img3);
         button3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -40,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button4 = (Button) findViewById(R.id.button4);
+        ImageButton button4 = (ImageButton) findViewById(R.id.img4);
         button4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -49,16 +52,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button5 = (Button) findViewById(R.id.button5);
+        ImageButton button5 = (ImageButton) findViewById(R.id.img5);
         button5.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), Reservation.class);
+                Intent intent = new Intent(getApplicationContext(), Expense.class);
                 startActivity(intent);
             }
         });
 
-        Button button6 = (Button) findViewById(R.id.button6);
+        ImageButton button6 = (ImageButton) findViewById(R.id.img6);
         button6.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -68,4 +71,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
 }
