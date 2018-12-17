@@ -47,8 +47,6 @@
         <activity android:name=".Ticket" />
         <activity android:name=".Expense" />
         <activity android:name=".Plan" />
-
-
     </application>
 
 </manifest>

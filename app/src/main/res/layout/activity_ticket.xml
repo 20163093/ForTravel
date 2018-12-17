@@ -13,8 +13,19 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:background="#00ffffff"
-        app:srcCompat="@drawable/ticket"
+        app:srcCompat="@drawable/qr"
         tools:layout_editor_absoluteX="220dp"
         tools:layout_editor_absoluteY="272dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="190dp"
+        android:ems="10"
+        android:hint="티켓 이름"
+        android:textAlignment="center"
+        android:inputType="text" />
 </RelativeLayout>
